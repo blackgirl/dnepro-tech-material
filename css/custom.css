@@ -73,6 +73,19 @@ body>.navbar {
     color: #f5f5f5;
     font-weight: 100;
 }
+.header-partials h2 {
+    color: #f5f5f5;
+    font-weight: 100;
+    border-top: 7px solid yellowgreen;
+    padding-top: 40px;
+    margin-right: 20px;
+}
+.header-partials h2.orange {
+    border-color: deepskyblue;
+}
+.header-partials h2.teal {
+    border-color: teal;
+}
 .bs-docs-section h1 {
     padding-top: 100px;
 }
