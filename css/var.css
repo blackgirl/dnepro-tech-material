@@ -1,0 +1,182 @@
+
+/* Colors */
+.bg-yellow {
+	background-color: #fee17a;
+}
+.bg-yellow:hover {
+	background-color: #FDE579;
+}
+.text-yellow {
+	color: #fee17a;
+}
+.border-yellow {
+	border-color: #fee17a;
+}
+.bg-blue {
+	background-color:#a1e6ff;
+}
+.text-blue {
+	color: #a1e6ff;
+}
+.border-blue {
+	border-color: #a1e6ff;
+}
+/* RED */
+.bg-red {
+	background-color:#f37d7f;
+}
+.text-red {
+	color: #f37d7f;
+}
+.border-red {
+	border-color: #f37d7f;
+}
+/* GREEN */
+.bg-green {
+	background-color:#caffb0;
+}
+.bg-green:hover {
+	background-color:#85da5c;
+}
+.text-green {
+	color: #85da5c;
+}
+.border-green {
+	border-color: #caffb0;
+}
+
+.bg-night-sky {
+	background-color: #2B404B;
+	color: #FFF;
+}
+.bg-bright-blue {
+    background-color:#2AB9C7;
+    color:#fff;
+}
+
+
+
+.block-41 #white {
+    background-color: #ffffff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4)
+}
+
+.block-41 #rich-black {
+    background-color: #000000
+}
+
+.block-41 #mulberry-burst {
+    background-color: #603d52
+}
+
+.block-41 #redcurrant-glory {
+    background-color: #954149
+}
+
+.block-41 #copper-blush {
+    background-color: #cb8e76
+}
+
+.block-41 #enchanted-eden {
+    background-color: #5b8744
+}
+
+.block-41 #moroccan-flame {
+    background-color: #e46400
+}
+
+.block-41 #lemon-punch {
+    background-color: #eece25
+}
+
+.block-41 #luscious-lime {
+    background-color: #a1c149
+}
+
+.block-41 #proud-peacock {
+    background-color: #348384
+}
+
+.block-41 #teal-tension {
+    background-color: #006375
+}
+
+.block-41 #saphire-salute {
+    background-color: #254261
+}
+
+.block-41 #urban-obsession {
+    background-color: #7d7d7d
+}
+/* Elements */
+section {
+	padding: 100px 0;
+	text-align: center;
+	background: #fff;
+	overflow: hidden;
+}
+a.btn-big {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	margin-top: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	border: 0;
+	border-radius: 0;
+	font-size: 28px;
+}
+.base-img {
+	display: block;
+	width: 100%;
+	height: auto;
+	vertical-align:middle;
+	border:0;
+}
+.bar {
+	height: 5px;
+}
+.card {
+	margin-bottom:30px;
+	position: relative;
+	height: 240px;
+	-webkit-transition: background-color .3s cubic-bezier(0.23, 1, 0.32, 1);
+	transition: background-color .3s cubic-bezier(0.23, 1, 0.32, 1);
+	font-size: 16px;
+}
+.card>a {
+	display: block;
+	height: 100%;
+	padding: 15px;
+	border-bottom: 0;
+	color: #243a54;
+}
+
+/* Table */
+/**/
+table.table-mat {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+.table-mat>thead {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+thead th {
+	text-align: center;
+	padding: 0 0 15px 20px;
+	width:33%;
+}
+thead th img {
+
+}
+tbody th {
+	padding-right: 10px;
+	text-align: right;
+	vertical-align: middle;
+}
