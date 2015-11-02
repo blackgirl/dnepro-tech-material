@@ -123,7 +123,16 @@ body>.navbar {
 .progress {
     margin-bottom: 10px;
 }
-
+#products .row {
+    margin-bottom: 40px;
+}
+#products .row .col-text {
+    max-height: 235px;
+    overflow: hidden;
+}
+#about h1 {
+    padding-top: 40px;
+}
 /* Contacts block */
 em.contact-form-header {
     margin-bottom: 120px;
@@ -133,7 +142,7 @@ em.contact-form-header {
     margin-top: 40px;
     padding-bottom: 120px;
     border-bottom: 1px dotted #ccc;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 .row.contact .col-lg-4 {}
 .row.contact div {}
