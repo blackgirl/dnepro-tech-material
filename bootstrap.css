@@ -189,20 +189,24 @@ optgroup {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  margin: 20px auto;
+}
+thead {
+  background: lightblue;
 }
 td,
 th {
-  padding: 0;
-  /*padding: 0px;*/
-/*border:none;*/
-background: rgba(197, 255, 70, 0.6);
-border: 3px solid #fff;
-text-align: center;
-color:rgba(51, 51, 51, 0.8);
-font-weight: 200;
+  padding: 5px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid lightgrey;
+  border-right: 5px solid #fff;
+  color: rgba(50, 50, 50, 0.9);
+  font-weight: 200;
 }
-td strong {
-	font-weight: 400;
+th {
+	font-weight: 600;
+  border-right: 1px solid #fff;
 }
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
@@ -1488,7 +1492,7 @@ a.bg-danger:focus {
 .page-header {
   padding-bottom: 9px;
   margin: 0px 0 0px;
-  border-bottom: 0px solid transparent;
+  border-bottom: none;
 }
 ul,
 ol {
@@ -5151,10 +5155,12 @@ a.thumbnail.active {
   color: #555555;
 }
 .alert {
+  font-size: 14px;
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
+  text-align: center;
 }
 .alert h4 {
   margin-top: 0;
@@ -5182,42 +5188,59 @@ a.thumbnail.active {
   color: inherit;
 }
 .alert-success {
-  /*background-color: #dff0d8;*/
-  /*background-color: rgba(206, 255, 34, 0.5);*/
-  border: 7px solid rgba(76, 175, 80, 0.75);
-background: 0;
-border: 0;
-/*color: #468847;*/
-color: #333;
-  /*border-color: #d6e9c6;*/
-  font-family: 'roboto mono',mono;
-  /*border-color: transparent;*/
-border-radius: 0;
+  border: 3px dotted rgba(192, 237, 5, 0.75);
+  background: 0;
+  /*border: 0;*/
+  color: #666;
+  border-radius: 0;
+  text-align: center;
 }
 .alert-success hr {
   border-top-color: #c9e2b3;
 }
+.alert-success.alert-success-bg {
+    border: 10px solid lightskyblue;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.25;
+}
 .alert-success.alert-success-br {
-	  border: 7px solid rgba(206, 255, 34, 0.5);
-	  color: #333;
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: left;
+  font-weight: 100;
+  font-family: 'open sans', 'ProximaNova-cond', sans-serif;
+  /*background-color: #f1c40f;*/
+  padding: 15px;
+  color: #333;
 }
 .alert-success.alert-success-bg {
-	background-color: #03a9f4;
-	color: rgba(255, 255, 255, 0.84);
-	border:0;
+  /*background-color: #3498BD;*/
+  /*color: rgba(255, 255, 255, 0.84);*/
+  /*border:0;*/
+}
+.alert-success.alert-success-bg>p {
+   /*background-color: #fff;*/
 }
 .alert-success .alert-link {
   color: #356635;
 }
 .alert-info {
+	max-width: 50%;
   background-color: #03a9f4;
-  color: #3a87ad;
-  color: rgba(255, 255, 255, 0.84);  font-family: 'roboto mono',mono;
+  color: rgba(255, 255, 255, 0.84);  
   border-color: transparent;
-	border-radius: 0;
-	float: right;
-	margin-right: -100px;
-	width: 50%;
+  border-radius: 0;
+}
+.alert-info-bg {
+  background-color: #03a9f4;
+  color: rgba(255, 255, 255, 0.84);  
+  border-color: transparent;
+  border-radius: 0;
+  text-align: center;
+  font-weight: 100;
+  float: none;
+  margin-right: 0px;
 }
 .alert-info hr {
   border-top-color: #a6e1ec;
@@ -6082,7 +6105,7 @@ button.close {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: none;
   min-height: 16.42857143px;
 }
 .modal-header .close {
@@ -6136,6 +6159,23 @@ button.close {
     width: 900px;
   }
 }
+/* Lecithin page */
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px transparent;
+    box-shadow: 0 5px 15px transparent;
+    background-color: transparent;
+  }
+  .close {
+    float: right;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1;
+    color: #fff;
+  }
+  .close:hover {
+    transition: rotate(360deg);
+  }
+/* Ens of Lecithin page */
 .tooltip {
   position: absolute;
   z-index: 1070;

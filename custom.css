@@ -15,6 +15,22 @@ body>.navbar {
     }
 }
 
+/* GENERAL STYLE */
+.m-t-80 {margin-top: 80px;}
+.m-t-70 {margin-top: 70px;}
+.m-t-40 {margin-top: 40px;}
+.m-b-0 {margin-bottom: 0;}
+.p-0 {padding: 0;}
+.m-0 {margin: 0;}
+/*.m-b-40 {
+    margin-top: 40px;
+}
+.m-l-40 {
+    margin-top: 40px;
+}
+.m-r-40 {
+    margin-top: 40px;
+}*/
 /* HOME PAGE */
 #home {
     padding-top: 0;
@@ -53,12 +69,20 @@ body>.navbar {
     left: 0;
     z-index: 1;
 }
-#banner h1 {
+.page--lecithin #banner h2 {
     color: #fff;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
+    font-size: 3.4em;
+    font-weight: 600;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: -60px;
 }
 #banner .row {
     margin: 50px 0 0 0;
+}
+table {
+    margin:0 auto;
 }
 .table-of-contents {
     margin-top: 1em;
@@ -146,14 +170,15 @@ em.contact-form-header {
     margin-top: 40px;
     padding-bottom: 120px;
     border-bottom: 1px dotted #ccc;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 .row.contact .col-lg-4 {}
 .row.contact div {}
+/* End of contacts */
 
 /* Footer */
 footer {
-    margin: 5em 0 1em;
+    margin: 1em 0;
 }
 
 footer li {
@@ -161,11 +186,15 @@ footer li {
     margin-right: 1.5em;
     margin-bottom: 1.5em;
 }
+
 footer p {
     clear: left;
     margin-bottom: 0;
 }
-
+footer .fa {
+    color: #2fa4e7;
+}
+/* End of footer */
 
 @media (max-width:767px) {}
 
@@ -195,45 +224,79 @@ footer p {
 .navbar-default .navbar-right>li>a  {
     font-size: 13px;
 }
-.navbar-default .navbar-right>li>a.active  {
-    font-weight: 400;
+.navbar-default .navbar-right>li>a.active,
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus  {
     padding: 15px;
-    background: rgb(168, 212, 4);
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    font-weight: 400;
+    border: none;
+    text-decoration: underline;
 }
 .navbar-default .navbar-brand {
-    font-size: 24px;
     font-weight: 200;
     letter-spacing: 5px;
     color:#fff;
+    padding-top: 0px;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    letter-spacing: 0;
+}
+nav .navbar-brand img {
+    max-height: 50px;
+    float: left;
+}
+nav .navbar-brand span {
+    padding: 5px 15px;
+    float: left;
+    display: none;
+}
+nav .navbar-brand .back-home {
+    display: block;
+    text-transform: none;
+    font-weight: 400;
+    padding: 15px;
 }
 .navbar-default .navbar-brand strong {
     font-weight: 600;
     letter-spacing: normal;
-    color: #333;
+    color: #fff;
     padding-right: 3px; 
 }
 .panel {
     padding: 0;
 }
+/* End of Navbar */
 
 /* Fixed Navbar */
 nav.fixed-theme {
     padding: 0;
 }
+nav.fixed-theme .navbar-brand {
+    padding: 5px 15px;
+}
+nav.fixed-theme .navbar-brand img {
+    max-height: 40px;
+    float: left;
+}
+nav.fixed-theme .navbar-brand span {
+    padding: 10px 15px;
+    float: left;
+    display: block;
+}
+nav.fixed-theme .navbar-brand .back-home {
+    display: none;
+}
+
 .navbar.navbar-fixed-top.fixed-theme {
     background: none;
     background-image: -webkit-gradient(linear,0% top,100% top,from(#14baec),to(#2fa9a7));
     background-image: -webkit-linear-gradient(left,color-stop(#14baec 0),color-stop(#2fa9a7 100%));
     background-image: -moz-linear-gradient(left,#14baec 0,#2fa9a7 100%);
-    background-image: linear-gradient(to right,#14baec 0,#2fa9a7 100%);
+    background-image: linear-gradient(to right,#1095bd 0,#2fa9a7 100%);
     background-repeat: repeat-x;
     border: 0;
     box-shadow: 0 1px 3px 3px rgba(98, 98, 95, 0.5);
     color: #fff;
 }
+
 .navbar-brand.fixed-theme,  .navbar.fixed-theme li a  {
     font-size: 16px;
     font-weight: 200;
@@ -255,8 +318,9 @@ nav.fixed-theme {
     transition: 0.8s;
     -webkit-transition:  0.8s;
 }
+/* End of Fixed Navbar */
 
-/* element-item */
+/* PERIODIC TABLE ITEMS */
 .element-item {
   position: relative;
   float: left;
@@ -309,6 +373,7 @@ nav.fixed-theme {
 .element-item.diatomic        { background: #00F; background: hsl(204, 97%, 23%); }
 .element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
 .element-item.noble-gas       { background: #F08; background: hsl(277, 97%, 34%); }
+/* End of PERIODIC TABLE ITEMS */
 
 /* Color Circles Background */
   .page--home .section--home-test-A .bgCircle--home-a {
@@ -324,6 +389,7 @@ nav.fixed-theme {
 svg#Layer_1 {
     margin-bottom: -5px;
 }
+
 /* PAGE LECITHIN */
 .page--lecithin #banner,
 .page--mixins #banner,
@@ -333,19 +399,70 @@ svg#Layer_1 {
     padding: 98px 0 0px 0;
 }
 .page--lecithin #banner {
-    background-image: linear-gradient(45deg,rgba(4, 138, 209, 0.4)   0,rgb(16, 147, 178) 40%,rgba(11, 175, 188, 0.8)  70%,rgba(47, 169, 167, 0.4) 100%),url(img/lecithin.png);    
+    min-height: 350px;
+    background-image: linear-gradient(45deg,rgba(4, 138, 209, 0.4)   0,rgb(16, 147, 178) 40%,rgba(11, 175, 188, 0.8)  70%,rgba(47, 169, 167, 0.4) 100%),url(img/lecithin_graph.png);
+}
+.page--lecithin .science #banner {
+    min-height: 350px;
+    background-image: linear-gradient(45deg,rgba(4, 138, 209, 0.4)   0,rgba(16, 147, 178, 0.9) 40%,rgba(11, 175, 188, 0.8)  70%,rgba(47, 169, 167, 0.4) 100%),url(img/lab.png);
+    background-size: cover;
+    padding: 120px 0 0px 0;
+}
+.page--lecithin .row.contact {
+    padding-bottom: 0;
+    border: 0;
+}
+.table-dsto table, .table-dsto h3 {
+    margin: 40px;
+}
+.table-dsto table .fa-check {
+    color: seagreen;
+}
+#generalInfo li>a {
+    font-size: 14px;
+}
+#generalInfo p {
+    font-weight: 400;
+    color: #333;
+}
+#generalInfo span {
+    text-indent: 0;
+}
+#generalInfo li {
+    font-weight: 200;
+    color: #111;
 }
 /* PAGE SCIENSE */
 .page--science #banner {
-    background-image: linear-gradient(45deg,rgba(4, 138, 209, 0.4)   0,rgb(16, 147, 178) 40%,rgba(11, 175, 188, 0.8)  70%,rgba(47, 169, 167, 0.4) 100%),url(img/cubes_abstract-wide.jpg);    
+    background-image: linear-gradient(45deg, rgba(4, 138, 209, 0.4) 0, rgb(16, 147, 178) 40%, rgba(11, 175, 188, 0.5) 70%, rgba(47, 169, 167, 0.4) 100%), url(img/Unknown3.png), url(img/lab.png);
+    background-size: cover;
+    background-position-y: 75%;
+    background-blend-mode: darken;
+}
+.page--science #banner h1{
+     -webkit-filter:none;
+}
+#partners li {
+    list-style: none;
+    padding: 15px 0;
+    float: left;
+    /*text-align: center;*/
+    font-weight: 200;
+}
+#partners img {
+    width: 100px;
 }
 /* PAGE MIXINS */
 .page--mixins #banner {
-    background-image: linear-gradient(45deg,rgba(4, 138, 209, 0.3)   0,rgba(16, 147, 178,.4) 40%,rgba(11, 175, 188, 0.4)  70%,rgba(47, 169, 167, 0.3) 100%),url(img/biotech-side2.jpg);
+    background-image: linear-gradient(45deg,rgba(4, 138, 209, 0.3)   0,rgba(16, 147, 178,.4) 40%,rgba(11, 175, 188, 0.4)  70%,rgba(47, 169, 167, 0.3) 100%),url(img/animals.jpg);
     background-size: cover;
     background-position-y: 100%;
 }
-.page--mixins .cow-speak .speech-bubble {
+.page--mixins #banner h1, h2 {
+    color: #fff;
+}
+    /* COW SPEAKS SEPARATOR */
+    .page--mixins .cow-speak .speech-bubble {
         background-color: #4abefb;
         color: #fff;
         bottom:5rem;
@@ -383,8 +500,7 @@ svg#Layer_1 {
         transform: rotate(-60deg);
         vertical-align:middle;
     }
-    .speech-bubble span {
-    }
+    .speech-bubble span {}
     .speech-bubble:after {
         position: absolute;
         bottom: -20px;
@@ -397,3 +513,4 @@ svg#Layer_1 {
         border-top-color: #fb8a5f;
         border-top-color:#4abefb;
     }
+    /* End of COW SPEAKS SEPARATOR */

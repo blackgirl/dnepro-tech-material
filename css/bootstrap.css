@@ -271,6 +271,11 @@ th {
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+@font-face {
+  font-family: 'Chunkfive';
+  src: url('../fonts/chunk/Chunkfive-webfont.eot');
+  src: url('../fonts/chunk/Chunkfive-webfont.eot') format('embedded-opentype'), url('../fonts/chunk/Chunkfive-webfont.woff') format('woff'), url('../fonts/chunk/Chunkfive-webfont.ttf') format('truetype');
+}
 .glyphicon {
   position: relative;
   top: 1px;
@@ -1440,7 +1445,7 @@ a.bg-danger:focus {
 .page-header {
   padding-bottom: 9px;
   margin: 0px 0 0px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: none;
 }
 ul,
 ol {
@@ -5149,6 +5154,22 @@ a.thumbnail.active {
   border-color: #bce8f1;
   color: #3a87ad;
 }
+.page--home .alert-info-bg {
+  margin-top: 40px ; 
+}
+.alert-info-bg {
+  background-color: #03a9f4;
+  color: #3a87ad;
+  color: rgba(255, 255, 255, 0.84);  
+  /*font-family: 'roboto mono',mono;*/
+  border-color: transparent;
+  border-radius: 0;
+  font-size: 20px;
+  text-align: center;
+  /*float: right;*/
+  /*margin-right: -100px;*/
+  /*width: 50%;*/
+}
 .alert-info hr {
   border-top-color: #a6e1ec;
 }
@@ -6012,7 +6033,7 @@ button.close {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: none;
   min-height: 16.42857143px;
 }
 .modal-header .close {
