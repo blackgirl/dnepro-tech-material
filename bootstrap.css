@@ -200,7 +200,7 @@ th {
   background: transparent;
   border: 1px solid transparent;
   border-bottom: 1px solid lightgrey;
-  border-right: 5px solid #fff;
+  border-right: 3px solid #fff;
   color: rgba(50, 50, 50, 0.9);
   font-weight: 200;
 }
@@ -1269,6 +1269,9 @@ h6,
   line-height: 1.1;
   color: #317eac;
 }
+#banner h1 {
+  color: white;
+}
 h1 small,
 h2 small,
 h3 small,
@@ -1370,6 +1373,14 @@ h6,
 p {
   margin: 0 0 10px;
   text-indent: 40px;
+}
+.table-mix {background: #fff;}
+.table-mix p {
+  text-indent: 0;
+}
+.table-mix tbody b {
+  /*color: #00afea;*/
+  font-weight: 600;
 }
 .lead {
   margin-bottom: 20px;
@@ -4456,8 +4467,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin: 7.5px -15px;
 }
 .navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   line-height: 20px;
 }
 @media (max-width: 767px) {
@@ -4660,18 +4671,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #178acc;
+  border-color: #fff;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #178acc;
+background: rgba(5, 165, 215, 0.3);
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #ffffff;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #1995dc;
+  border-color: #fff;
+  /*background: rgba(5, 165, 215, 0.3);*/
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -4698,7 +4710,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #dddddd;
-    background-color: transparent;
+  background: rgba(5, 165, 215, 0.6);
   }
 }
 .navbar-default .navbar-link {
@@ -4756,11 +4768,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #022f5a;
+  border-color: #fff;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #022f5a;
+  background-color: #fff;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #ffffff;
@@ -5188,8 +5200,9 @@ a.thumbnail.active {
   color: inherit;
 }
 .alert-success {
-  border: 3px dotted rgba(192, 237, 5, 0.75);
+  border: 0px dotted rgba(192, 237, 5, 0.75);
   background: 0;
+  background-color: #FAC754;
   /*border: 0;*/
   color: #666;
   border-radius: 0;
@@ -5199,10 +5212,17 @@ a.thumbnail.active {
   border-top-color: #c9e2b3;
 }
 .alert-success.alert-success-bg {
-    border: 10px solid lightskyblue;
+    border: 0px solid lightskyblue;
+    background-color: #00afea;
     color: #333;
     font-size: 16px;
     line-height: 1.25;
+}
+.alert-success.alert-success-bg>p {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+  color: #fff;
 }
 .alert-success.alert-success-br {
   font-size: 14px;
@@ -5210,17 +5230,9 @@ a.thumbnail.active {
   text-align: left;
   font-weight: 100;
   font-family: 'open sans', 'ProximaNova-cond', sans-serif;
-  /*background-color: #f1c40f;*/
-  padding: 15px;
-  color: #333;
-}
-.alert-success.alert-success-bg {
-  /*background-color: #3498BD;*/
-  /*color: rgba(255, 255, 255, 0.84);*/
-  /*border:0;*/
-}
-.alert-success.alert-success-bg>p {
-   /*background-color: #fff;*/
+  margin-left: 10px;  padding: 15px 30px;
+  color: #666;
+  font-style: italic;
 }
 .alert-success .alert-link {
   color: #356635;
@@ -5233,7 +5245,7 @@ a.thumbnail.active {
   border-radius: 0;
 }
 .alert-info-bg {
-  background-color: #03a9f4;
+  background-color: #03a9f4;/*background: #85b91e;#69D2E7*/
   color: rgba(255, 255, 255, 0.84);  
   border-color: transparent;
   border-radius: 0;
@@ -5994,7 +6006,7 @@ button.list-group-item-danger.active:focus {
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
-  background: #ccc;
+  background: lightgoldenrodyellow;
   /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);*/
   /*box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);*/
 }
@@ -6163,17 +6175,21 @@ button.close {
 .modal-content {
     -webkit-box-shadow: 0 5px 15px transparent;
     box-shadow: 0 5px 15px transparent;
-    background-color: transparent;
+    background-color: #fff;
   }
   .close {
     float: right;
     font-size: 60px;
     font-weight: 100;
     line-height: 1;
-    color: #fff;
+    opacity: 1;
+    color: lightskyblue;
+    text-shadow: none;
   }
   .close:hover {
-    transition: rotate(360deg);
+    color: skyblue;
+    opacity: 1;
+    text-shadow: none;
   }
 /* Ens of Lecithin page */
 .tooltip {

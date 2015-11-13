@@ -229,6 +229,7 @@ footer .fa {
     padding: 15px;
     border: none;
     text-decoration: underline;
+    background: rgba(5, 165, 215, 0.6);
 }
 .navbar-default .navbar-brand {
     font-weight: 200;
@@ -404,7 +405,7 @@ svg#Layer_1 {
 }
 .page--lecithin .science #banner {
     min-height: 350px;
-    background-image: linear-gradient(45deg,rgba(4, 138, 209, 0.4)   0,rgba(16, 147, 178, 0.9) 40%,rgba(11, 175, 188, 0.8)  70%,rgba(47, 169, 167, 0.4) 100%),url(img/lab.png);
+    /*background-image: linear-gradient(45deg,rgba(4, 138, 209, 0.4)   0,rgba(16, 147, 178, 0.9) 40%,rgba(11, 175, 188, 0.8)  70%,rgba(47, 169, 167, 0.4) 100%),url(img/lab.png);*/
     background-size: cover;
     padding: 120px 0 0px 0;
 }
@@ -421,7 +422,7 @@ svg#Layer_1 {
 #generalInfo li>a {
     font-size: 14px;
 }
-#generalInfo p {
+#generalInfo {
     font-weight: 400;
     color: #333;
 }
@@ -433,11 +434,12 @@ svg#Layer_1 {
     color: #111;
 }
 /* PAGE SCIENSE */
-.page--science #banner {
-    background-image: linear-gradient(45deg, rgba(4, 138, 209, 0.4) 0, rgb(16, 147, 178) 40%, rgba(11, 175, 188, 0.5) 70%, rgba(47, 169, 167, 0.4) 100%), url(img/Unknown3.png), url(img/lab.png);
+.science #banner {
+     background-image: url(img/filter_background.gif), linear-gradient(45deg,rgba(4, 138, 209, 0.3) 0,rgba(16, 147, 178,.3) 40%,rgba(11, 175, 188, 0.4) 70%,rgba(47, 169, 167, 0.3) 100%),url(img/lab.png);
+    /*background-image: linear-gradient(45deg, rgba(4, 138, 209, 0.4) 0, rgb(16, 147, 178) 40%, rgba(11, 175, 188, 0.5) 70%, rgba(47, 169, 167, 0.4) 100%), url(img/Unknown3.png), url(img/lab.png);*/
     background-size: cover;
     background-position-y: 75%;
-    background-blend-mode: darken;
+    background-blend-mode: overlay;
 }
 .page--science #banner h1{
      -webkit-filter:none;
@@ -446,8 +448,10 @@ svg#Layer_1 {
     list-style: none;
     padding: 15px 0;
     float: left;
-    /*text-align: center;*/
     font-weight: 200;
+}
+#partners li p {
+        text-indent: 0;
 }
 #partners img {
     width: 100px;
@@ -458,9 +462,10 @@ svg#Layer_1 {
     background-size: cover;
     background-position-y: 100%;
 }
-.page--mixins #banner h1, h2 {
+.page--mixins #banner h1, .page--mixins #banner h2 {
     color: #fff;
 }
+.page--mixins .alert> {color:#fff;}
     /* COW SPEAKS SEPARATOR */
     .page--mixins .cow-speak .speech-bubble {
         background-color: #4abefb;
