@@ -1372,7 +1372,7 @@ h6,
 }
 p {
   margin: 0 0 10px;
-  text-indent: 40px;
+  text-indent: 0px;
 }
 .table-mix {background: #fff;}
 .table-mix p {
