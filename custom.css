@@ -169,7 +169,7 @@ em.contact-form-header {
 .row.contact {
     margin-top: 40px;
     padding-bottom: 120px;
-    border-bottom: 1px dotted #ccc;
+    /*border-bottom: 1px dotted #ccc;*/
     margin-bottom: 0px;
 }
 .row.contact .col-lg-4 {}
@@ -241,8 +241,11 @@ footer .fa {
     letter-spacing: 0;
 }
 nav .navbar-brand img {
-    max-height: 50px;
+    max-height: 35px;
     float: left;
+}
+nav .navbar-brand img:hover {
+    cursor: pointer;
 }
 nav .navbar-brand span {
     padding: 5px 15px;
@@ -254,6 +257,10 @@ nav .navbar-brand .back-home {
     text-transform: none;
     font-weight: 400;
     padding: 15px;
+}
+nav .navbar-brand .back-home:hover {
+    text-decoration: underline;
+    opacity: .9;
 }
 .navbar-default .navbar-brand strong {
     font-weight: 600;
@@ -435,8 +442,7 @@ svg#Layer_1 {
 }
 /* PAGE SCIENSE */
 .science #banner {
-     background-image: url(img/filter_background.gif), linear-gradient(45deg,rgba(4, 138, 209, 0.3) 0,rgba(16, 147, 178,.3) 40%,rgba(11, 175, 188, 0.4) 70%,rgba(47, 169, 167, 0.3) 100%),url(img/lab.png);
-    /*background-image: linear-gradient(45deg, rgba(4, 138, 209, 0.4) 0, rgb(16, 147, 178) 40%, rgba(11, 175, 188, 0.5) 70%, rgba(47, 169, 167, 0.4) 100%), url(img/Unknown3.png), url(img/lab.png);*/
+     background-image:linear-gradient(45deg,rgba(4, 138, 209, 0.3) 0,rgba(16, 147, 178,.3) 40%,rgba(11, 175, 188, 0.4) 70%,rgba(47, 169, 167, 0.3) 100%),url(img/lab.png);
     background-size: cover;
     background-position-y: 75%;
     background-blend-mode: overlay;
@@ -519,4 +525,3 @@ svg#Layer_1 {
         border-top-color:#4abefb;
     }
     /* End of COW SPEAKS SEPARATOR */
-  

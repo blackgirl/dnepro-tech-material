@@ -6159,8 +6159,8 @@ button.close {
     margin: 30px auto;
   }
   .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 5px 15px transparent;
+    box-shadow: 0 5px 15px transparent;
   }
   .modal-sm {
     width: 300px;
@@ -6176,6 +6176,12 @@ button.close {
     -webkit-box-shadow: 0 5px 15px transparent;
     box-shadow: 0 5px 15px transparent;
     background-color: #fff;
+  }
+  .modal-content {
+    border-color:transparent;
+    -webkit-box-shadow: 0 5px 15px transparent;
+    box-shadow: 0 5px 15px transparent;
+    background-color: transparent; 
   }
   .close {
     float: right;
