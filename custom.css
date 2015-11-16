@@ -525,3 +525,5 @@ svg#Layer_1 {
         border-top-color:#4abefb;
     }
     /* End of COW SPEAKS SEPARATOR */
+    li ul li:before{ content:"-"; position:relative; left:-5px;}
+    li ul li{ text-indent:-5px; list-style-type: none;}
