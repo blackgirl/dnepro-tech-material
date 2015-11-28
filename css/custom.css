@@ -1,5 +1,6 @@
 body {
     padding-top: 0px;
+    overflow-x: hidden;
 }
 body>.navbar {
     -webkit-transition: background-color 300ms ease-in;
@@ -82,7 +83,7 @@ body>.navbar {
 }
 #sens .page-content .row div {
     font-weight: 100;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 #sens h1 {
     font-weight: 500;
@@ -104,8 +105,6 @@ body>.navbar {
 #sens .row:last-child {
     margin-bottom: 40px;
 }
-
-
 /**/
 .icon-style2 {
     font-size: 70px;
@@ -122,7 +121,6 @@ body>.navbar {
     color: #A9014B;
 }
 /**/
-
 .salat-header {
     /*background-color: #a2c02e;*/
 }   
@@ -135,7 +133,6 @@ body>.navbar {
 .salat-header,.violet-header,.blue-header {
     min-height: 250px;
 }
-    
 #banner h1 abbr {
     font-size: .4em;
     font-weight: 100
@@ -153,8 +150,7 @@ body>.navbar {
 #banner h1 {
     color: #fff;
     letter-spacing: 7px;
-
-    font-family: 'Lucida Grande',Lato,Roboto,'Open Sans',Helvetica,Arial,sans-serif;
+    font-family: Lato,Roboto,'Open Sans',Helvetica,Arial,sans-serif;
     font-variant: small-caps;
     text-transform: uppercase;
 }
@@ -167,7 +163,6 @@ table {
 .table-of-contents {
     margin-top: 1em;
 }
-
 .page-header h1 {
     font-size: 4em;
 }
@@ -238,35 +233,35 @@ table {
     padding-top: 40px;
 }
 /* Contacts block */
+#contacts .page-header {
+    padding-bottom: 30px;
+    margin: 20px 0;
+}
 em.contact-form-header {
     margin-bottom: 120px;
     margin-top: 40px;
 }
 .row.contact {
-    margin-top: 40px;
+    margin-top: 10px;
     padding-bottom: 0px;
     border-bottom: 1px dotted #ccc;
     margin-bottom: 0px;
 }
 .row.contact .col-lg-4 {}
 .row.contact div {}
-
 /* Footer */
 footer {
     margin: 1em 0;
 }
-
 footer li {
     float: left;
     margin-right: 1.5em;
     margin-bottom: 1.5em;
 }
-
 footer p {
     clear: left;
     margin-bottom: 0;
 }
-
 @media (max-width:767px) {
     .header-partials h2 {
         font-size: 18px;
@@ -278,15 +273,21 @@ footer p {
     .bs-docs-section h1 {
         margin-top: 40px;
     }
-}
-
-@media (max-width:767px) {
     #banner {
         margin-bottom: 2em;
         text-align: center
     }
 }
-
+@media (max-width:967px) {
+    .page-header h1 {
+        font-size: 3em;
+    }
+}
+@media (max-width:680px) {
+    .page-header h1 {
+        font-size: 2em;
+    }
+}
 /* Navbar */
 .navbar {
     background: none;
@@ -387,7 +388,6 @@ nav.fixed-theme .navbar-brand span {
     transition: 0.8s;
     -webkit-transition:  0.8s;
 }
-
 /* ---- .element-item ---- */
 /*.element-item {
   position: relative;
@@ -454,24 +454,21 @@ nav.fixed-theme .navbar-brand span {
   .page--home .section--home-test-A .bgCircle--home-c {
     background: linear-gradient(-45deg, #FC636B 0%, #FF6D92 60%, #ffb900 100%);
   }*/
-
 /* PAGE LECITHIN */
 .page--lecithin #banner {
     min-height: 400px;
-    background-image: linear-gradient(45deg,rgba(4, 138, 209, 0.4)   0,rgb(16, 147, 178) 40%,rgba(11, 175, 188, 0.8)  70%,rgba(47, 169, 167, 0.4) 100%),url(lecithin_graph.png);
+    background-image: linear-gradient(45deg,rgba(4, 138, 209, 0.4) 0,rgb(16, 147, 178) 40%,rgba(11, 175, 188, 0.8)  70%,rgba(47, 169, 167, 0.4) 100%),url(lecithin_graph.png);
     /*background-image: linear-gradient(45deg,rgba(4, 138, 209, 0.4)   0,rgb(16, 147, 178) 40%,rgba(11, 175, 188, 0.8)  70%,rgba(47, 169, 167, 0.4) 100%),url(img/Protein_composite.png);*/
     background-size: contain;
     padding: 98px 0 0px 0;
 }
-
-
 /* PAGE SCIENSE */
 .page--science {}
 .contact {
     text-align: center;
-font-weight: 500;
-font-size: 18px;
-line-height: 1.5;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.5;
 }
   #map {
         -webkit-filter: invert();
@@ -491,15 +488,16 @@ line-height: 1.5;
     .gm-style .place-card-large {
         display: none;
     }
-    .map-text {
+    /*.map-text {
         background:#fff;
-    }
-    #forms {
+    }*/
+    #forms,
+    .map-text {
         background: #fff;
     }
     .map-text {
         padding: 15px;
     }
-    .map-text:first-child {
-        /*margin-left: -15px;*/
+    .map-text:last-child {
+        border-left: 1px dotted #666;
     }

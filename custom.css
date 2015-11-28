@@ -5,7 +5,6 @@ body>.navbar {
     -webkit-transition: background-color 300ms ease-in;
     transition: background-color 300ms ease-in
 }
-
 @media (min-width:768px) {
     body>.navbar-transparent {
         background-color: transparent
@@ -14,7 +13,6 @@ body>.navbar {
         background-color: transparent !important
     }
 }
-
 /* GENERAL STYLE */
 .m-t-80 {margin-top: 80px;}
 .m-t-70 {margin-top: 70px;}
@@ -412,6 +410,9 @@ svg#Layer_1 {
 .page--lecithin #banner {
     min-height: 350px;
     background-image: linear-gradient(45deg,rgba(4, 138, 209, 0.4)   0,rgb(16, 147, 178) 40%,rgba(11, 175, 188, 0.8)  70%,rgba(47, 169, 167, 0.4) 100%),url(img/lecithin_graph.png);
+}
+.page--lecithin .science {
+    margin-top: -80px;
 }
 .page--lecithin .science #banner {
     min-height: 350px;
