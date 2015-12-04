@@ -29,6 +29,9 @@ body>.navbar {
 .m-r-40 {
     margin-top: 40px;
 }*/
+.not-list {
+    list-style: none;
+}
 /* HOME PAGE */
 #home {
     padding-top: 0;
