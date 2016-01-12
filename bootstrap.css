@@ -5230,9 +5230,13 @@ a.thumbnail.active {
   text-align: left;
   font-weight: 100;
   font-family: 'open sans', 'ProximaNova-cond', sans-serif;
-  margin-left: 10px;  padding: 15px 30px;
+  margin-left: 10px;  
+  padding: 15px 30px;
   color: #666;
   font-style: italic;
+}
+.alert-success.alert-success-br.col-md-3 {
+  padding: 15px;
 }
 .alert-success .alert-link {
   color: #356635;
