@@ -534,3 +534,9 @@ svg#Layer_1 {
     /* End of COW SPEAKS SEPARATOR */
     li ul li:before{ content:"-"; position:relative; left:-5px;}
     li ul li{ text-indent:-5px; list-style-type: none;}
+
+
+    /* Map */
+#google-map iframe .gm-style .place-card-large {
+    display: none !important;
+}
